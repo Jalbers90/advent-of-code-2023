@@ -192,18 +192,6 @@ func checkGearAdjacent(r, c int) bool {
 	return false
 }
 
-func printFound(nums []map[int][][]int) {
-	for _, m := range nums {
-		for key, coords := range m {
-			fmt.Printf("KEY %d :: POINTS: ", key)
-			for _, point := range coords {
-				fmt.Printf("(%d, %d)  ", point[0], point[1])
-			}
-			fmt.Print("\n")
-		}
-	}
-}
-
 func containsElement(slice []string, target string) bool {
 	for _, element := range slice {
 		if element == target {
