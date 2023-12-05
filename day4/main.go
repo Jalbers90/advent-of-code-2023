@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"time"
 )
 
 func main() {
@@ -17,11 +18,14 @@ func main() {
 	if *test {
 		fname = "test.txt"
 	}
+	start := time.Now()
 	if *p1 {
 		part1(fname)
 	} else if *p2 {
 		part2(fname)
 	}
+	end := time.Since(start)
+	fmt.Println("TIME TOOK ::: ", end)
 }
 
 func part1(fname string) {
