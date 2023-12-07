@@ -2,8 +2,6 @@ package main
 
 import (
 	"flag"
-	"os"
-	"strings"
 )
 
 func main() {
@@ -24,13 +22,13 @@ func main() {
 }
 
 func part1(fname string) {
-	f, _ := os.ReadFile(fname)
-	contents := string(f)
-	lines := strings.Split(contents, "\n")
+	// f, _ := os.ReadFile(fname)
+	// contents := string(f)
+	// lines := strings.Split(contents, "\n")
 }
 
 func part2(fname string) {
-	f, _ := os.ReadFile(fname)
-	contents := string(f)
-	lines := strings.Split(contents, "\n")
+	// f, _ := os.ReadFile(fname)
+	// contents := string(f)
+	// lines := strings.Split(contents, "\n")
 }
