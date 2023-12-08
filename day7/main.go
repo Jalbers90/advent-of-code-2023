@@ -161,6 +161,7 @@ func part2(fname string) {
 				five += 1
 			}
 		}
+
 		if five == 1 {
 			h.strength = HandType["Five"]
 		} else if four == 1 {
