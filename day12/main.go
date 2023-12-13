@@ -111,7 +111,7 @@ func arrangements(record string, list []int) int {
 				ways += dp(i+1, j) // place '.'
 			}
 
-			if j < len(list) {
+			if j < len(list) { // possible to have valid record after placing all damaged springs
 				count := list[j]
 				newI := i
 				for newI < len(record) && count > 0 {
