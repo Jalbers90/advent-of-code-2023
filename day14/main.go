@@ -98,7 +98,7 @@ func part2(lines []string) {
 	nRounds := len(rounds)
 	totalMap := map[int][]int{}
 	// (1000000000 - number of junk states) % cycle_length = state number answer lands on in cycle
-	for n := 0; n < 20; n++ { // 1000000000
+	for n := 0; n < 100; n++ { // 1000000000
 		for i, dir := range Dirs {
 			if i < 2 { // loop forward North and West
 				for j, rock := range rounds {
