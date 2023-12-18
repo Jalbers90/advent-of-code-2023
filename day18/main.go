@@ -108,8 +108,7 @@ func part2(lines []string) {
 func polygonArea(path []Point) int {
 	// shoelace theorem
 	n := len(path)
-	if n < 3 {
-		// A polygon must have at least three vertices
+	if n < 3 { // A polygon must have at least three vertices
 		return 0
 	}
 	area := 0.0
