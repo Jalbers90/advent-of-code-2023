@@ -73,11 +73,9 @@ func part1() {
 	end := Point{r: len(grid) - 1, c: len(grid[0]) - 1}
 	minHeatloss := 0
 	for q.Len() > 0 {
-		// dlog("%+v\n", q)
 		cur := heap.Pop(q).(Point)
 		seenstr := fmt.Sprintf("%d,%d,%s,%d", cur.r, cur.c, cur.dir, cur.steps)
 		if _, ok := seen[seenstr]; ok {
-			// fmt.Println("HIII ::: ", cur)
 			continue
 		}
 		seen[seenstr] = nil

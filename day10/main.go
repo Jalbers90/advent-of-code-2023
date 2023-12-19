@@ -201,9 +201,7 @@ func countTiles(row, col int) (int, bool) {
 			escaped = true
 		}
 	}
-	// fmt.Println("END COUNT-TILES :: ", tiles, escaped, row, col)
 	return tiles, escaped
-
 }
 
 func printGrid() {

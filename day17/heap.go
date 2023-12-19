@@ -21,14 +21,6 @@ func (h *PointHeap) Push(x any) {
 }
 
 func (h *PointHeap) Pop() any {
-	// old := *pq
-	// n := len(old)
-	// item := old[n-1]
-	// old[n-1] = nil  // avoid memory leak
-	// item.index = -1 // for safety
-	// *pq = old[0 : n-1]
-	// return item
-
 	old := *h
 	n := len(old)
 	x := old[n-1]
