@@ -119,7 +119,6 @@ func part2(lines []string) {
 		if line == "" {
 			break
 		}
-		// work flow
 		curlyIndex := strings.Index(line, "{")
 		name := line[0:curlyIndex]
 		wfStrs := strings.Split(line[curlyIndex+1:len(line)-1], ",")
